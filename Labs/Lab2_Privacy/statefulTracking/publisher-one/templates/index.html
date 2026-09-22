@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><title>Tech News</title>
+  <script src="http://analytics.test:9100/static/analytics.js"></script>
+</head>
+<body>
+  <h1>Tech News — {{ page }}</h1>
+  <a href="/">Home</a> | <a href="/ai">AI</a> | <a href="/security">Security</a>
+  <p>Technology articles.</p>
+
+  <iframe src="https://tracker-one.test:9000/track?site=publisher-one&page={{ page }}"
+          width="300" height="100"></iframe>
+
+  <iframe src="https://tracker-one.test:9000/sync" width="200" height="50"></iframe>
+</body>
+</html>

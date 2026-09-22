@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><title>Travel Blog</title>
+  <script src="http://analytics.test:9100/static/analytics.js"></script>
+</head>
+<body>
+  <h1>Travel Blog — {{ page }}</h1>
+  <a href="/">Home</a> | <a href="/morocco">Morocco</a> | <a href="/japan">Japan</a>
+  <p>Travel articles.</p>
+
+  <iframe src="https://tracker-one.test:9000/track?site=publisher-two&page={{ page }}"
+          width="300" height="100"></iframe>
+</body>
+</html>
