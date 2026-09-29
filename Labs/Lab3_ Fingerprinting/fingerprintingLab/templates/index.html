@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Fingerprinting Lab</title>
+</head>
+<body>
+    <h1>Browser Fingerprinting Lab</h1>
+
+    <h2>Active Feature Collection</h2>
+    <pre id="feature-output">Waiting for JavaScript...</pre>
+
+    <script src="{{ url_for('static', filename='fingerprint.js') }}"></script>
+
+    <h2>Typing Test</h2>
+    <p id="target-sentence">Cookies are gone, but Alice's rhythm still leaves traces!</p>
+    <input id="typing-input" type="text" size="60">
+    <button id="restart-button">Restart</button>
+    <pre id="typing-results"></pre>
+
+<script src="{{ url_for('static', filename='fingerprint2.js') }}"></script>
+</body>
+</html>
